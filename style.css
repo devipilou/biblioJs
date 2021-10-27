@@ -1,0 +1,110 @@
+/* Projet Bibliothèque Js */
+/* MAJ par pilou le 26/10/2021 */
+
+*,
+::before,
+::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* General */
+body{
+    background-color: lightcyan;
+}
+h1{
+    margin: 1.5em 0 1.5em 2em;
+}
+h2{
+    margin: 1em;
+}
+.hidden{
+    display: none;
+}
+/* Header */
+nav{
+    display: flex;
+    width: 100%;
+    height: 40px;
+    background-color:lightyellow;
+    justify-content:start;
+    align-items: center;
+}
+.titreNav{
+    width: 50%;
+}
+.menuNav{
+    width: 50%;
+}
+
+/* Main */
+.accueil{
+    width: 100%;
+    display: flex;
+}
+.accueil-gauche{
+    width: 50%;
+}
+.acceuil-gauche img{
+    width: 100%;
+    height: auto;
+}
+.accueil-droite{
+    width: 50%;
+}
+
+/* Tableau */
+.tableau{
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+}
+.rang{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    height:3em;
+    align-items: center;
+}
+.premier-rang{
+    background-color: lightcoral;
+}
+.rang:nth-child(even){
+    background-color: lightblue;
+}
+
+.ajout{
+    display: flex;
+    width: 100%;
+    height: 2em;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgreen;
+    color: black;
+    text-decoration: none;
+    border-top: 1px solid black;
+}
+.bouttons{
+    padding: 0.3em;
+    border-radius: 0.5em;
+}
+.btn1{
+    background-color: yellow;
+}
+.btn2{
+    background-color: orangered;
+}
+
+/* formulaire */
+.form{
+    text-align: center;
+}
+input{
+    margin-bottom: 0.3em;
+    width: 300px;
+}

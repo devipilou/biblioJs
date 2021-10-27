@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bibliothèque - Livres</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="titreNav">
+                <a href="index.html">Ma Bibliothèque</a>
+            </div>
+            <div class="menuNav">
+                <a href="index.html">Accueil</a>
+                <a href="#">Livres</a>
+            </div>
+        </nav>
+    </header>
+    <h1>Livres</h1>
+    <div class="tableau">
+        <div class="rang premier-rang">
+            <div class="cell">Titre</div>
+            <div class="cell">Auteur(s)</div>
+            <div class="cell">Année de parution</div>
+            <div class="cell">Modifications</div>
+        </div>
+        <div class="emplacement"></div>
+        <a class="ajout" href="#">
+            Ajouter
+        </a>
+    </div>
+
+    <form method="post" id="formAdd" class="form hidden">
+        <h2>Ajouter un nouveau livre</h2>
+        <label for="titre">Titre</label>
+        <br>
+        <input type="text" name="titre" id="titre" placeholder="Titre du livre" required>
+        <br>
+        <label for="auteur">Auteur(s)</label>
+        <br>
+        <input type="text" name="auteur" id="auteur" placeholder="Prenom et Nom de l'auteur" required>
+        <br>
+        <label for="parution">Année de Parution</label>
+        <br>
+        <input type="text" name="parution" id="parution" placeholder="XXXX" required>
+        <br>
+        <button type="submit">Ajouter</button>
+
+    </form>
+
+    <form method="post" id="formUp" class="form hidden">
+        <h2>Modifier un livre</h2>
+        <label for="titre">Titre</label>
+        <br>
+        <input type="text" name="titre" id="titreUp" placeholder="Titre du livre" required>
+        <br>
+        <label for="auteur">Auteur(s)</label>
+        <br>
+        <input type="text" name="auteur" id="auteurUp" placeholder="Prenom et Nom de l'auteur" required>
+        <br>
+        <label for="parution">Année de Parution</label>
+        <br>
+        <input type="text" name="parution" id="parutionUp" placeholder="XXXX" required>
+        <br>
+        <input type="hidden" name="ref" id="ref" value="">
+        <button type="submit">Modifier</button>
+
+    </form>
+
+    <script src="main.js"></script>
+</body>
+</html>
